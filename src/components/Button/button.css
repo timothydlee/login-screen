@@ -1,0 +1,15 @@
+.btn {
+    height: 36px;
+    width: 132px;
+    border-radius: 4px;
+    background-color: #005AA9;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-disabled {
+    background-color: gray;
+    cursor: default;
+}

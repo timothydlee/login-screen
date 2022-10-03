@@ -1,5 +1,5 @@
 import { ChangeEvent, useEffect, useState } from 'react';
-import { Card, InputWithMessage } from '../../components';
+import { Button, Card, InputWithMessage } from '../../components';
 import './signup.css';
 
 const Signup = () => {
@@ -47,7 +47,7 @@ const Signup = () => {
 							errorMessage='Passwords do not match' />
 					</div>
 					<div>
-						<button disabled={submitButtonDisabled}>Submit</button>
+						<Button disabled={submitButtonDisabled}>Submit</Button>
 					</div>
 				</div>
 			</Card>
