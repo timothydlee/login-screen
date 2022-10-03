@@ -1,8 +1,8 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import { Card, InputWithMessage } from '../../components';
-import './loginScreen.css';
+import './signup.css';
 
-const LoginScreen = () => {
+const Signup = () => {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
 	const [passwordConfirmation, setPasswordConfirmation] = useState('');
@@ -22,11 +22,14 @@ const LoginScreen = () => {
 
 	const submitButtonDisabled = !passwordsMatch || !password || !passwordConfirmation || !username;
 	return (
-		<div className='login-screen-wrapper'>
+		<div className='signup-screen-wrapper'>
 			<Card>
-				<div className='login-screen-card-container'>
-					<div>Login</div>
-					<div className='login-screen-card-inputs-container'>
+				<div className='signup-screen-card-container'>
+					<div className='signup-screen-header-text-wrapper'>
+						<h1>Sign up.</h1>
+						<p>Create a username and password to see your data</p>
+					</div>
+					<div className='signup-screen-card-inputs-container'>
 						<InputWithMessage
 							placeholder='Username'
 							onChange={handleUsernameChange}
@@ -51,4 +54,4 @@ const LoginScreen = () => {
 	)
 };
 
-export default LoginScreen;
+export default Signup;

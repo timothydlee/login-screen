@@ -17,6 +17,7 @@ const InputWithMessage = ({
 }: InputWithMessageProps) => (
 	<div className='input-with-message-container'>
 		<input
+			className='input-with-message-input'
 			type="text"
 			placeholder={placeholder}
 			value={value}

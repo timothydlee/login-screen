@@ -1,1 +1,1 @@
-export { LoginScreen } from './LoginScreen';
+export { Signup } from './Signup';

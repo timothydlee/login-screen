@@ -1,9 +1,9 @@
 import './App.css';
-import { LoginScreen } from './pages';
+import { Signup } from './pages';
 
 const App = () => (
 	<div className="App">
-		<LoginScreen />
+		<Signup />
 	</div>
 );
 

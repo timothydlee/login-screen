@@ -1,4 +1,4 @@
-.login-screen-wrapper {
+.signup-screen-wrapper {
 	height: 100vh;
 	width: 100vw;
 	display: flex;
@@ -6,7 +6,13 @@
 	align-items: center;
 }
 
-.login-screen-card-container {
+.signup-screen-header-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.signup-screen-card-container {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
@@ -14,7 +20,7 @@
 	height: 100%;
 }
 
-.login-screen-card-inputs-container {
+.signup-screen-card-inputs-container {
 	display: inherit;
 	flex-direction: column;
 	gap: 1em;
