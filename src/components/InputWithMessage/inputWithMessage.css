@@ -1,11 +1,16 @@
 .input-with-message-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
 }
 
 .input-with-message-input {
-	width: 80%;
+    width: 80%;
+    border: 1px solid #0000000D;
+    border-radius: 8px;
+    height: 40px;
+    padding-left: 1em;
 }

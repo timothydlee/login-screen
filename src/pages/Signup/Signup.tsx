@@ -21,6 +21,7 @@ const Signup = () => {
 	const handlePasswordConfirmationChange = (e: ChangeEvent<HTMLInputElement>) => setPasswordConfirmation(e.target.value);
 
 	const submitButtonDisabled = !passwordsMatch || !password || !passwordConfirmation || !username;
+
 	return (
 		<div className='signup-screen-wrapper'>
 			<Card>
