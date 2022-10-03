@@ -38,16 +38,20 @@ const Signup = () => {
 						<InputWithMessage
 							placeholder='Password'
 							onChange={handlePasswordChange}
-							value={password} />
+							value={password}
+							type='password' />
 						<InputWithMessage
 							placeholder='Confirm password'
 							onChange={handlePasswordConfirmationChange}
 							value={passwordConfirmation}
 							showErrorMessage={!passwordsMatch}
-							errorMessage='Passwords do not match' />
+							errorMessage='Passwords do not match'
+							type='password' />
 					</div>
 					<div>
-						<Button disabled={submitButtonDisabled}>Submit</Button>
+						<Button
+							onClick={() => alert('Sending off POST request')}
+							disabled={submitButtonDisabled}>Submit</Button>
 					</div>
 				</div>
 			</Card>

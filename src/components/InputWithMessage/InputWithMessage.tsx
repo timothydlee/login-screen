@@ -1,11 +1,15 @@
 import { ChangeEvent } from 'react';
 import './inputWithMessage.css';
+
+type InputType = 'password' | 'text';
+
 interface InputWithMessageProps {
 	errorMessage?: string,
 	showErrorMessage?: boolean,
 	placeholder?: string,
 	onChange: (e: ChangeEvent<HTMLInputElement>) => void,
-	value: string;
+	value: string,
+	type?: InputType
 };
 
 const InputWithMessage = ({
@@ -13,12 +17,13 @@ const InputWithMessage = ({
 	showErrorMessage = false,
 	placeholder = '',
 	onChange,
-	value
+	value,
+	type = 'text'
 }: InputWithMessageProps) => (
 	<div className='input-with-message-container'>
 		<input
 			className='input-with-message-input'
-			type='text'
+			type={type}
 			placeholder={placeholder}
 			value={value}
 			onChange={onChange} />
