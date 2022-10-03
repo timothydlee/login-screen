@@ -18,11 +18,11 @@ const InputWithMessage = ({
 	<div className='input-with-message-container'>
 		<input
 			className='input-with-message-input'
-			type="text"
+			type='text'
 			placeholder={placeholder}
 			value={value}
 			onChange={onChange} />
-		{showErrorMessage && <div>{errorMessage}</div>}
+		{showErrorMessage && <p className='error-text'>{errorMessage}</p>}
 	</div>
 );
 

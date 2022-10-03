@@ -1,31 +1,32 @@
 .signup-screen-wrapper {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .signup-screen-header-text-wrapper {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
 }
 
 .signup-screen-card-container {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-	justify-content: center;
-	height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    height: 100%;
 }
 
 .signup-screen-card-inputs-container {
-	display: inherit;
-	flex-direction: column;
-	gap: 1em;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	width: 100%;
+    display: inherit;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
 }
