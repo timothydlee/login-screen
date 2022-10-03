@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(95deg, #005AA9, #40B7E9);
 }
 
 .signup-screen-header-text-wrapper {
